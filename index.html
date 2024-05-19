@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="navbar font-thin flex justify-between items-center w-50 border-b-4 border-b-slate-100 flex-col text-sm md:flex-row md:space-x-4 md:px-4 md:py-3 sm:m-auto sm:items-center sticky top-0 z-50 bg-white"
+    >
+      <img class="logoStarbucks h-10 w-10 mb-3" src="logo.png" />
+      <ul
+        class="list-none flex space-x-14 md:space-x-10 hover:cursor-pointer text-[12px] mb-2 sm:text-base"
+      >
+        <div class="border-b-2 pb-3 w-12 border-[#00754A] text-center">
+          <li class="font-bold text-sm underline-offset-8 text-[12px]">Home</li>
+        </div>
+        <li>Gift</li>
+        <li>Order</li>
+        <li>Pay</li>
+        <li>Store</li>
+      </ul>
+      <button
+        class="searchbox flex gap-2 border-[0.5px] rounded-full border-slate-200 border-solid items-center px-3 py-1.5 shadow-lg focus:border-black focus:border-[0.5px]"
+      >
+        <img
+          src="https://www.starbucks.in/assets/icon/search.svg"
+          class="md:[w-2] md:[h-2]"
+        />
+        <input
+          type="text"
+          class="w-[200px] text-[13.5px] outline-none md:text-[13.5px] md:w-[195px]"
+          placeholder="Looking for something specific?"
+        />
+      </button>
+      <img
+        class="hover:cursor-pointer m-4 h-8 w-8 sm:m-5"
+        src="https://www.starbucks.in/assets/icon/account_thin.svg"
+      />
+    </div>
+    <div
+      class="nav-below flex justify-between bg-[#1E3932] text-white p-7 items-center"
+    >
+      <p class="text-[14px] sm:text-[19px]">
+        Rewards are pouring. Sign up now!
+      </p>
+      <button
+        class="py-1 px-2 text-[12px] sm:text-[14px] sm:px-3 border-[1px] rounded-full border-slate-200 font-semibold"
+      >
+        Know More
+      </button>
+    </div>
+    <div
+      class="barista-recommends w-full bg-green overflow-hidden bg-[#EDEBE9] my-5"
+    >
+      <div class="flex justify-between">
+        <h2 class="font-bold text-[#1E3932] text-2xl my-3 mx-7">
+          Barista Recommends
+        </h2>
+        <button
+          class="text-[12px] text-[#00754A] font-semibold mx-3 hidden sm:block"
+        >
+          View Menu
+        </button>
+      </div>
+      <div class="items flex space-x-4 mb-8 ml-2">
+        <div
+          class="box-1 min-w-80 rounded-md ml-6 h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/112601.webp"
+              class="rounded-md w-20 mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹199<span class="text-sm">.50</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/nonveg.svg"
+              class="mb-1"
+            />
+            <p class="font-semibold">Bhuna Chicken Puff</p>
+            <p class="font-mono text-[11.5px] text-slate-500">
+              PER SERVE(85 g) - 390kcal
+            </p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 ml-12 text-center rounded-full shadow-xl my-10"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div
+          class="box-2 min-w-80 rounded-md h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/114800.webp"
+              class="rounded-md w-[90px] mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹430<span class="text-sm">.50</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/nonveg.svg"
+              alt=""
+              class="mb-1"
+            />
+            <p class="font-semibold">Tandoori Chicken Panini Burger</p>
+            <p class="font-mono text-[11.5px] text-slate-500">290g/901kcal</p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 my-4 ml-12 text-center rounded-full shadow-xl"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div
+          class="box-3 min-w-80 rounded-md h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/113008.webp"
+              class="rounded-md w-20 mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹299<span class="text-sm">.25</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/veg.svg"
+              alt=""
+              class="mb-1"
+            />
+            <p class="font-semibold">Chocolate Brownie Cupcake</p>
+            <p class="font-mono text-[11.5px] text-slate-500">
+              PER SERVE(80 g) - 416kcal
+            </p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 my-4 ml-12 text-center rounded-full shadow-xl"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div
+          class="box-4 min-w-80 rounded-md h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/112737.webp"
+              class="rounded-md w-20 mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹273<span class="text-sm">.00</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/veg.svg"
+              alt=""
+              class="mb-1"
+            />
+            <p class="font-semibold">Three Dip Chips</p>
+            <p class="font-mono text-[11.5px] text-slate-500">
+              PER SERVE(180 g) - 513kcal
+            </p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 my-5 ml-12 text-center rounded-full shadow-xl"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div
+          class="box-5 min-w-80 rounded-md h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/113001.webp"
+              class="rounded-md w-20 mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹294<span class="text-sm">.00</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/veg.svg"
+              alt=""
+              class="mb-1"
+            />
+            <p class="font-semibold">Chilli Paneer In Herberd Bun</p>
+            <p class="font-mono text-[11.5px] text-slate-500">
+              PER SERVE(160 g) - 598kcal
+            </p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 my-5 ml-12 text-center rounded-full shadow-xl"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div
+          class="box-6 min-w-80 max-w-80 rounded-md h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/112570.webp"
+              class="rounded-md w-20 mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹367<span class="text-sm">.50</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/veg.svg"
+              alt=""
+              class="mb-1"
+            />
+            <p class="font-semibold">Strawberry Milkshake</p>
+            <p class="font-mono text-[11.5px] text-slate-500">
+              TALL(Tall Strawberry Milkshake).PER SERVE(354 ml) - 569kcal
+            </p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 my-5 ml-12 text-center rounded-full shadow-xl"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+        <div
+          class="box-7 min-w-80 max-w-80 rounded-md h-[175px] p-5 flex gap-7 border-[1px] border-slate-400 shadow-md bg-white"
+        >
+          <div class="pic-rate">
+            <img
+              src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/112573.webp"
+              class="rounded-md w-20 mb-2"
+              alt=""
+            />
+            <h2 class="font-semibold">₹367<span class="text-sm">.50</span></h2>
+          </div>
+          <div class="desc">
+            <img
+              src="https://www.starbucks.in/assets/icon/veg.svg"
+              alt=""
+              class="mb-1"
+            />
+            <p class="font-semibold">Vanilla Milkshake</p>
+            <p class="font-mono text-[11.5px] text-slate-500">
+              TALL(Tall Strawberry Milkshake).PER SERVE(354 ml) - 531kcal
+            </p>
+            <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2 my-5 ml-12 text-center rounded-full shadow-xl"
+            >
+              Add Item
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="bg-black text-white mx-36 w-32 h-10 rounded-full mb-3 sm:hidden"
+      >
+        View Menu
+      </button>
+      <div
+        class="w-10 rounded-full h-10 p-1 bg-white text-green-900 top-[420px] sm:top-80 left-5 opacity-60 absolute shadow-slate-900 hover:cursor-pointer border-[1.5px]"
+      >
+        <img src="left.svg" alt="" />
+      </div>
+      <div
+        class="w-10 rounded-full h-10 p-1 bg-white text-green-900 top-[420px] sm:top-80 right-2 absolute shadow-slate-900 hover:cursor-pointer border-[1.5px]"
+      >
+        <img src="right.svg" alt="" />
+      </div>
+    </div>
+    <div class="subscription relative">
+      <div class="coloured bg-[#09907F] h-56 sm:px-12 mx-2 rounded-xl text-white flex gap-3 text-[12px] ">
+        <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/285_x_595_App_removebg_preview_2_c4bc942184.png"
+          alt="" class="w-[120px] sm:w-[130px] h-[260px]"
+        />
+        <div class="right mx-5 my-6">
+          <p class="text-[12px] m-1 sm:text-[14px]">Starbucks</p>
+          <h1 class="font-bold mb-2 text-lg sm:text-xl">Beverage Subscription</h1>
+          <p>Starbucks Subscription is Back! Sip Your Favorites for Less. Tap for details. T&C Apply.</p>
+          <div class="lower flex justify-between m-5  items-center ">
+            <div class="left">
+              <p>Starting from</p>
+              <p class="font-bold text-lg">Rs. 789</p>
+            </div>
+            <div class="right">
+              <button
+        class=" sm:px-16 sm:py-3 text-[12px] px-3 py-1 border-[1px] bg-white text-black rounded-full border-slate-200 font-semibold md:text-[14px] lg:px-28 lg:ml-[500px] lg:py-4"
+      >
+        Know More
+      </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-white font-bold absolute top-[20px] right-[300px]">*T&C Apply</p>
+    </div>
+    <div class="curated mx-10 my-20">
+      <h2 class="font-bold text-[#1E3932] text-xl sm:text-2xl mb-12 sm:mx-8">
+        Handcrafted Curations
+      </h2>
+      <div class=" flex flex-wrap justify-between overflow-hidden sm:space-x-5 mx-10">
+        <div class="box-1 ">
+          <img src="https://www.starbucks.in/assets/icon/Bestseller.webp" class="max-w-24 max-h-24 sm:max-w-20 sm:max-h-20  md:max-w-28 md:max-h-28 rounded-full" alt="">
+          <h4 class="text-[#1E3932] mx-6 font-bold my-1 flex flex-cols items-center justify-center">Bestseller</h4>
+        </div>
+        <div class="box-2">
+          <img src="https://www.starbucks.in/assets/icon/Drinks.webp" class="max-w-24 max-h-24 sm:max-w-20 sm:max-h-20  md:max-w-28 md:max-h-28 rounded-full"  alt="">
+          <h4 class="text-[#1E3932] mx-6 font-bold my-1 flex flex-cols items-center justify-center">Drinks</h4>
+        </div>
+        <div class="box-3">
+          <img src="https://www.starbucks.in/assets/icon/Food.webp" class="max-w-24 max-h-24 sm:max-w-20 sm:max-h-20  md:max-w-28 md:max-h-28 rounded-full" alt="">
+          <h4 class="text-[#1E3932] font-bold my-1 flex flex-cols items-center justify-center mx-7">Food</h4>
+        </div>
+        <div class="box-4">
+          <img src="https://www.starbucks.in/assets/icon/Merchandise.webp" class="max-w-24 max-h-24 sm:max-w-20 sm:max-h-20  md:max-w-28 md:max-h-28 rounded-full"  alt="">
+          <h4 class="text-[#1E3932] font-bold my-1 flex flex-cols items-center justify-center">Merchandise</h4>
+        </div>
+        <div class="box-5">
+          <img src="https://www.starbucks.in/assets/icon/CoffeeAtHome.webp" class="max-w-24 max-h-24 sm:max-w-20 sm:max-h-20  md:max-w-28 md:max-h-28 rounded-full"  alt="">
+          <h4 class="text-[#1E3932] font-bold my-1 flex flex-cols items-center justify-center">Coffee At Home</h4>
+        </div>
+        <div class="box-6">
+          <img src="https://www.starbucks.in/assets/icon/ReadyToEat.webp" class="max-w-24 max-h-24 sm:max-w-20 sm:max-h-20  md:max-w-28 md:max-h-28 rounded-full" 
+           alt="">
+          <h4 class="text-[#1E3932] font-bold my-1 flex flex-cols items-center justify-center">Ready to Eat</h4>
+        </div>
+      </div>
+    </div>
+    <div class="div-latest-offerings">
+      <div class="heading">
+        <h2 class="font-bold text-[#1E3932] text-2xl mb-7 mx-11">
+          Latest Offerings
+        </h2></div>
+    <div class="latest-offerings-content flex my-4 mx-10 space-x-8 overflow-hidden">
+      <div class="lat-box-1 shadow-xl rounded-t-xl min-w-[360px] max-w-[700px] ">
+        <img src="https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/113849.webp" class="overflow-hidden rounded-t-xl " class="min-h-[200px]" alt="">
+        <img src="https://www.starbucks.in/assets/icon/veg.svg" class="m-3" alt="">
+        <p class="font-semibold text-[#1E3932] m-3">Belgium Chocolate Frappuccino</p>
+            <p class="font-mono text-[11.5px] text-slate-500 m-3">
+              PER SERVE(85 g) - 390kcal
+            </p>
+            <p class="m-3 text-[#1E3932] text-xs">Blend of decadent Belgian chocolate sauce and coffee with a whipped chocolate topping. The beverage is finished...</p>
+            <div class="price flex items-center justify-between mx-3 my-4">
+              <h2 class="font-semibold">₹509<span class="text-sm">.25</span></h2>
+              <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2  text-center rounded-full shadow-xl "
+            >
+              Add Item
+            </button>
+            </div>
+      </div>
+      <div class="lat-box-2 shadow-xl rounded-t-xl min-w-[360px] max-w-[700px] ">
+        <img src="https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/113842.webp" class="overflow-hidden rounded-t-xl " alt="">
+        <img src="https://www.starbucks.in/assets/icon/veg.svg" class="m-3" alt="">
+        <p class="font-semibold text-[#1E3932] m-3">Belgium Chocolate Latte</p>
+            <p class="font-mono text-[11.5px] text-slate-500 m-3">
+              TALL(354 ML) 
+            </p>
+            <p class="m-3 text-[#1E3932] text-xs">Espresso with decadent Belgian chocolate sauce, mocha sauce and steamed milk. Topped with whipped chocolate to...</p>
+            <div class="price flex items-center justify-between mx-3 my-4">
+              <h2 class="font-semibold">₹430<span class="text-sm">.50</span></h2>
+              <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2  text-center rounded-full shadow-xl "
+            >
+              Add Item
+            </button>
+            </div>
+      </div>
+      <div class="lat-box-3 shadow-xl rounded-t-xl min-w-[360px] max-w-[700px]">
+        <img src="https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/113846.webp" class="overflow-hidden rounded-t-xl " alt="">
+        <img src="https://www.starbucks.in/assets/icon/veg.svg" class="m-3" alt="">
+        <p class="font-semibold text-[#1E3932] m-3">Iced Belgium Chocolate Latte</p>
+            <p class="font-mono text-[11.5px] text-slate-500 m-3">
+              PER SERVE(85 g) - 390kcal
+            </p>
+            <p class="m-3 text-[#1E3932] text-xs">Espresso with decadent Belgian chocolate sauce, mocha sauce and steamed milk served over ice. Topped with whip...</p>
+            <div class="price flex items-center justify-between mx-3 my-4">
+              <h2 class="font-semibold">₹472<span class="text-sm">.50</span></h2>
+              <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2  text-center rounded-full shadow-xl "
+            >
+              Add Item
+            </button>
+            </div>
+      </div>
+      <div class="lat-box-4 shadow-xl rounded-t-xl min-w-[360px] max-w-[700px]">
+        <img src="https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/104905.webp" class="overflow-hidden rounded-t-xl " class="min-h-[200px]" alt="">
+        <img src="https://www.starbucks.in/assets/icon/veg.svg" class="m-3" alt="">
+        <p class="font-semibold text-[#1E3932] m-3">Alphonso Mango Java Chip Frappuccino </p>
+            <p class="font-mono text-[11.5px] text-slate-500 m-3">
+              TALL(Tall Alphonso Mango Java chip Frappuccin).512kcal
+            </p>
+            <p class="m-3 text-[#1E3932] text-xs">Alphonso mango and milk are blended with ice and Java Chips to a fruity, chocolaty perfection. Topped with...</p>
+            <div class="price flex items-center justify-between mx-3 my-4">
+              <h2 class="font-semibold">₹509<span class="text-sm">.25</span></h2>
+              <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2  text-center rounded-full shadow-xl "
+            >
+              Add Item
+            </button>
+            </div>
+      </div>
+      <div class="lat-box-5 shadow-xl rounded-t-xl  min-w-[360px] max-w-[700px]">
+        <img src="https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/115283.webp" class="overflow-hidden rounded-t-xl " class="min-h-[200px]" alt="">
+        <img src="https://www.starbucks.in/assets/icon/veg.svg" class="m-3" alt="">
+        <p class="font-semibold text-[#1E3932] m-3">Cold Brew with Ginger Ale </p>
+            <p class="font-mono text-[11.5px] text-slate-500 m-3">
+              SHORT(Iced Short Cold brew with Ginger Ale).130kcal 
+            </p>
+            <p class="m-3 text-[#1E3932] text-xs">A delicious double layered cold brew beverage with ginger ale. A pure delight for a warm sunny day. </p>
+            <div class="price flex items-center justify-between mx-3 my-4">
+              <h2 class="font-semibold">₹372<span class="text-sm">.75</span></h2>
+              <button
+              class="bg-[#00754A] text-white text-sm font-semibold px-6 py-2  text-center rounded-full shadow-xl "
+            >
+              Add Item
+            </button>
+            </div>
+      </div>
+      <div
+        class="w-10 rounded-full h-10 p-1 bg-white text-green-900 border-[1.5px] border-slate-200 top-[1480px] sm:top-[1480px] md:top-[1480px]  lg:top-[1400px] left-[-12px] opacity-60 absolute shadow-slate-900 hover:cursor-pointer"
+      >
+        <img src="left.svg" alt="" />
+      </div>
+      <div
+        class="w-10 rounded-full h-10 p-1 bg-white text-green-900 border-[1.5px] border-slate-200 top-[1480px] sm:top-[1480px] md:top-[1480px]  lg:top-[1400px] right-5 absolute shadow-slate-900 hover:cursor-pointer"
+      >
+        <img src="right.svg" alt="" />
+      </div>
+    </div>
+    </div>
+    <div class="learn-about-more bg-[#EDEBE9] pb-4">
+      <div class="heading flex justify-between">
+        <h2 class="font-bold text-[#1E3932] text-2xl my-6 mx-11">
+          Learn more about the world of coffee!
+        </h2>
+        <button
+          class="text-[13.5px] mx-3  text-[#00754A] font-bold hidden sm:block "
+        >
+          Discover More
+        </button>
+      </div>
+      <div class="bg-[url('https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg')] bg-cover opacity-2 h-[400px] bg-center overflow-hidden m-5 rounded-3xl bg-opacity-20 hover:cursor-pointer">
+        <div class=" h-[440px] py-48 bg-black bg-opacity-20 px-4 sm:px-16 hover:bg-opacity-50 hover:ease-in hover:duration-200">
+            <p class="text-white font-bold text-xl sm:text-3xl mb-3">Art & Science of Coffee Brewing</p>
+             <p class="text-white text-xs sm:text-base mb-1">Master the perfect brew with Starbucks! Learn the art and science of coffee brewing.</p>
+             <button
+        class=" sm:px-16 sm:py-3 text-[12px] px-3 py-2 mt-2 border-[1px] bg-white text-black rounded-full border-slate-200 font-semibold md:text-[14px] md:mt-4 lg:px-28 lg:ml-[1px] lg:mt-4 lg:py-4"
+      >
+        Know More
+      </button>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <footer class="bg-[#0E382C] text-white ">
+    <img src="logo.png" alt="" class="min-w-16 min-h-16 mx-5 py-5">
+    <div class="details sm:flex sm:gap-48 sm:ml-20 sm:mt-12">
+      <div class="about flex sm:flex-col justify-center items-center gap-20 sm:gap-5 py-10">
+        <h2 class="font-bold text-xl">About</h2>
+         <img src="up-arrow-svgrepo-com.svg" class="w-4 h-4 sm:hidden" alt="">
+         <ul class="hidden sm:block ">
+          <li class="mb-4">Our Heritage</li>
+          <li class="mb-4">Coffeehouse</li>
+          <li class="mb-4">Our Company</li>
+         </ul>
+      </div>
+      <div class="responsibility flex sm:flex-col justify-center items-center gap-12 sm:gap-5 py-10">
+        <h2 class="font-bold text-xl ">Responsibility</h2>
+       <img src="up-arrow-svgrepo-com.svg" class="w-4 h-4 sm:hidden" alt="">
+       <ul class="hidden sm:block ">
+        <li class="mb-4">Diversity</li>
+        <li class="mb-4">Community</li>
+        <li class="mb-4">Ethical Sourcing</li>
+        <li class="mb-4">Environmental Stewardship</li>
+        <li class="mb-4">Learn More</li>
+       </ul>
+      </div>
+      <div class="quick-links flex sm:flex-col justify-center items-center gap-10 sm:gap-5 py-10">
+       <h2 class="font-bold text-xl">Quick Links</h2>
+       <img src="up-arrow-svgrepo-com.svg" class="w-4 h-4 sm:hidden" alt="">
+       <ul class="hidden sm:block ">
+        <li class="mb-4">Privacy Policy</li>
+        <li class="mb-4">FAQs</li>
+        <li class="mb-4">Terms and Conditions</li>
+        <li class="mb-4">Starbucks India Mobile App Terms of Use</li>
+        <li class="mb-4">Customer Service</li>
+        <li class="mb-4">Starbucks Rewards Day Offer</li>
+        <li class="mb-4">Delivery</li>
+        <li class="mb-4">Season's Gifting</li>
+        <li class="mb-4">Offer for Beverage Subscription at Starbucks.</li>
+        <li class="mb-4">Beverage Subscription</li>
+       </ul>
+      </div>
+    </div>
+    <div class="socials flex gap-5 p-10 justify-center">
+      <div class="left">
+        <h2 class="mb-2">Social Media</h2>
+        <div class="left-lower flex gap-2">
+          <img src="https://www.starbucks.in/assets/icon/instagram.svg" alt="">
+        <img src="https://www.starbucks.in/assets/icon/facebook.svg" alt="">
+        <img src="	https://www.starbucks.in/assets/icon/twitter.svg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <img src="https://www.starbucks.in/assets/images/appstoreiOS.png" alt="" class="mb-1">
+        <img src="	https://www.starbucks.in/assets/images/appstoreAndroid.png" alt="">
+      </div>
+    </div>
+    <hr class="text-white w-full">
+    <ul class="m-10 space-y-3 sm:flex sm:items-center sm:gap-5">
+      <li class="mt-3">Web Accessibility</li>
+      <li class="hidden sm:block">|</li>
+      <li>Privacy Statement</li>
+      <li class="hidden sm:block">|</li>
+      <li>Terms of Use</li>
+      <li class="hidden sm:block">|</li>
+      <li>Contact Us</li>
+    </ul>
+    <p class="mx-10 py-2">© 2024 Starbucks Coffee Company. All rights reserved.</p>
+  </footer>
+</html>
